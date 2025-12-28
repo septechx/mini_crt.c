@@ -6,3 +6,9 @@ Minimal C runtime for x86-64 Linux.
 
 - Calls `__module_init()`
 - Exits with the return value of `main()`
+
+## Compiling
+
+```bash
+gcc -c -nostdlib -fno-stack-protector mini_crt.c -o mini_crt.o
+```
